@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">navi_git</string>
+    <string name="created_at">Created at %s</string>
+    <string name="closed_at">Closed at %s</string>
+    <string name="error_fetching_data">Error fetching data please check your internet</string>
+    <string name="retry">Retry</string>
+</resources>
