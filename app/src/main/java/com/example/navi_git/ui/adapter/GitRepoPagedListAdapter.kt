@@ -4,8 +4,8 @@ import android.annotation.SuppressLint
 import androidx.recyclerview.widget.DiffUtil
 import com.example.navi_git.models.GithubPullRequest
 
-class GitRepoPagedListAdapter : BasePagedListAdapter<GithubPullRequest>(BreedDiffUtil) {
-    object BreedDiffUtil : DiffUtil.ItemCallback<GithubPullRequest>() {
+class GitRepoPagedListAdapter : BasePagedListAdapter<GithubPullRequest>(PrDiffUtil) {
+    object PrDiffUtil : DiffUtil.ItemCallback<GithubPullRequest>() {
         override fun areItemsTheSame(oldItem: GithubPullRequest, newItem: GithubPullRequest): Boolean {
             return oldItem.id == newItem.id
         }
